@@ -7,7 +7,9 @@
   "main": "./mongo-edu",
   "scripts": {
     "start": "node ./bin/mongo-edu",
-    "postinstall": "node ./.resume/deploy"
+    "postinstall": "node ./.resume/deploy",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "mongo-edu": "./bin/mongo-edu"
@@ -51,7 +53,8 @@
     "rimraf": "^2.5.2",
     "which": "^1.2.4",
     "yargs": "^4.3.2",
-    "youtube-dl": "~1.10.5"
+    "youtube-dl": "~1.10.5",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": ">= 0.8.x"
@@ -60,5 +63,6 @@
     "url": "https://github.com/przemyslawpluta/mongo-edu/issues"
   },
   "homepage": "https://github.com/przemyslawpluta/mongo-edu",
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
