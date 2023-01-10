@@ -34,7 +34,7 @@
     "cheerio": "^0.20.0",
     "colors": "~1.1.2",
     "easy-table": "~1.0.0",
-    "extract-zip": "^1.5.0",
+    "extract-zip": "^2.0.0",
     "filesize": "^3.2.1",
     "get-youtube-id": "~1.0.0",
     "glob": "^7.0.3",
